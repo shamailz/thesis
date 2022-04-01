@@ -403,7 +403,7 @@ class FirstPersonCameraDemo {
 
     let light = new THREE.SpotLight(
         0xFFFFFF, 100.0, distance, angle, penumbra, decay);
-    light.castShadow = true;
+    light.castShadow = false;
     light.shadow.bias = -0.00001;
     light.shadow.mapSize.width = 4096;
     light.shadow.mapSize.height = 4096;
