@@ -304,7 +304,7 @@ class FirstPersonCameraDemo {
     this.scene_.add(plane);
 
     const box = new THREE.Mesh(
-      new THREE.BoxGeometry(4, 4, 4),
+      new THREE.BoxGeometry(8, 4, 14),
       this.loadMaterial_('vintage-tile1_', 0.2));
     box.position.set(10, 2, 0);
     box.castShadow = true;
@@ -364,7 +364,7 @@ class FirstPersonCameraDemo {
 
     this.sprite_ = new THREE.Sprite(
      new THREE.SpriteMaterial({map: crosshair, color: 0xffffff, fog: false, depthTest: false, depthWrite: false}));
-    this.sprite_.scale.set(0.05, 0.05 * this.camera_.aspect, 1)
+    this.sprite_.scale.set(0.005, 0.005 * this.camera_.aspect, 1)
    this.sprite_.position.set(0, 0, -10);
 
    this.uiScene_.add(this.sprite_);
@@ -372,7 +372,7 @@ class FirstPersonCameraDemo {
 
   initializeLights_() {
     const distance = 5000.0;
-    const angle = Math.PI / 4.0;
+    const angle = Math.PI;
     const penumbra = 0.5;
     const decay = 1.0;
 
