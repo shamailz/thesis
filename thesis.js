@@ -296,7 +296,7 @@ class FirstPersonCameraDemo {
     checkerboard.encoding = THREE.sRGBEncoding;
 
     const plane = new THREE.Mesh(
-        new THREE.PlaneGeometry(100, 100, 10, 10),
+        new THREE.PlaneGeometry(200, 200, 10, 10),
         new THREE.MeshStandardMaterial({map: checkerboard}));
     plane.castShadow = false;
     plane.receiveShadow = true;
