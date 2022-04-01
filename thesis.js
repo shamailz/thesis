@@ -419,7 +419,7 @@ class FirstPersonCameraDemo {
     light = new THREE.HemisphereLight(upColour, downColour, 0.5);
     light.color.setHSL( 0.6, 1, 0.6 );
     light.groundColor.setHSL( 0.095, 1, 0.75 );
-    light.position.set(0, 0, 0);
+    light.position.set(50, 50, 50);
     this.scene_.add(light);
   }
 
