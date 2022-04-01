@@ -303,13 +303,13 @@ class FirstPersonCameraDemo {
     plane.rotation.x = -Math.PI / 2;
     this.scene_.add(plane);
 
-//     const box = new THREE.Mesh(
-//       new THREE.BoxGeometry(2, 4, 50),
-//       this.loadMaterial_('vintage-tile1_', 0.2));
-//     box.position.set(3, 4, 0);
-//     box.castShadow = true;
-//     box.receiveShadow = true;
-//     this.scene_.add(box);
+    const box = new THREE.Mesh(
+      new THREE.BoxGeometry(2, 4, 50),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(3, 4, 0);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box);
     
 //     const box2 = new THREE.Mesh(
 //       new THREE.BoxGeometry(70, 4, 2),
