@@ -399,10 +399,10 @@ class FirstPersonCameraDemo {
     const distance = 200.0;
     const angle = Math.PI;
     const penumbra = 0;
-    const decay = 0.9;
+    const decay = 1.0;
 
     let light = new THREE.SpotLight(
-        0xFFFFFF, 500.0, distance, angle, penumbra, decay);
+        0xFFFFFF, 50.0, distance, angle, penumbra, decay);
     light.castShadow = true;
     light.shadow.bias = -0.00001;
     light.shadow.mapSize.width = 4096;
@@ -410,7 +410,7 @@ class FirstPersonCameraDemo {
     light.shadow.camera.near = 1;
     light.shadow.camera.far = 100;
 
-    light.position.set(50, 50, 50);
+    light.position.set(0, 0, 0);
     light.lookAt(0, 0, 0);
     this.scene_.add(light);
 
