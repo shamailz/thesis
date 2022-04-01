@@ -359,16 +359,16 @@ class FirstPersonCameraDemo {
     }
 
     // Crosshair
-    //const crosshair = mapLoader.load('resources/1.bmp');
-    //crosshair.anisotropy = maxAnisotropy;
+    const crosshair = mapLoader.load('resources/wall.jpeg');
+    crosshair.anisotropy = maxAnisotropy;
 
-    //this.sprite_ = new THREE.Sprite(
-     // new THREE.SpriteMaterial({map: crosshair, color: 0xffffff, fog: false, depthTest: false, depthWrite: false}));
-    //this.sprite_.scale.set(0.15, 0.15 * this.camera_.aspect, 1)
-   // this.sprite_.position.set(0, 0, -10);
+    this.sprite_ = new THREE.Sprite(
+     new THREE.SpriteMaterial({map: crosshair, color: 0xffffff, fog: false, depthTest: false, depthWrite: false}));
+    this.sprite_.scale.set(0.15, 0.15 * this.camera_.aspect, 1)
+   this.sprite_.position.set(0, 0, -10);
 
-    //this.uiScene_.add(this.sprite_);
- // }
+   this.uiScene_.add(this.sprite_);
+  }
 
   initializeLights_() {
     const distance = 500.0;
