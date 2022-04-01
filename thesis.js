@@ -341,7 +341,7 @@ class FirstPersonCameraDemo {
     const wall1 = new THREE.Mesh(
       new THREE.BoxGeometry(400, 100, 5),
       concreteMaterial);
-    wall1.position.set(0, -40, 90);
+    wall1.position.set(0, -40, -90);
     wall1.castShadow = true;
     wall1.receiveShadow = true;
     this.scene_.add(wall1);
@@ -365,7 +365,7 @@ class FirstPersonCameraDemo {
     const wall4 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 100, 400),
       concreteMaterial);
-    wall4.position.set(-100, -40, 0);
+    wall4.position.set(-80, -40, 0);
     wall4.castShadow = true;
     wall4.receiveShadow = true;
     this.scene_.add(wall4);
@@ -373,7 +373,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane, box, wall1, wall2, wall3, wall4];
+      plane, box, wall1, wall2, wall3, wall4 , box , box2 ];
 
     this.objects_ = [];
 
@@ -396,7 +396,7 @@ class FirstPersonCameraDemo {
   }
 
   initializeLights_() {
-    const distance = 1000.0;
+    const distance = 500.0;
     const angle = Math.PI / 2;
     const penumbra = 0;
     const decay = 1.0;
