@@ -381,8 +381,8 @@ class FirstPersonCameraDemo {
 
   initializeLights_() {
     const distance = 5000.0;
-    const angle = Math.PI;
-    const penumbra = 0.5;
+    const angle = Math.PI * 2;
+    const penumbra = 0.9;
     const decay = 1.0;
 
     let light = new THREE.SpotLight(
