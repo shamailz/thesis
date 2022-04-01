@@ -365,7 +365,7 @@ class FirstPersonCameraDemo {
     const wall4 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 100, 300),
       concreteMaterial);
-    wall4.position.set(0, -40, 0);
+    wall4.position.set(-300, -40, 0);
     wall4.castShadow = true;
     wall4.receiveShadow = true;
     this.scene_.add(wall4);
