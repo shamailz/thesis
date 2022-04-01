@@ -402,26 +402,26 @@ class FirstPersonCameraDemo {
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
 
-    const metalMap = mapLoader.load('resources/1.bmp');
+    const metalMap = mapLoader.load('resources/wall.jpeg');
     metalMap.anisotropy = maxAnisotropy;
     metalMap.wrapS = THREE.RepeatWrapping;
     metalMap.wrapT = THREE.RepeatWrapping;
     metalMap.repeat.set(tiling, tiling);
 
-    const albedo = mapLoader.load('resources/1.bmp');
+    const albedo = mapLoader.load('resources/wall.jpeg');
     albedo.anisotropy = maxAnisotropy;
     albedo.wrapS = THREE.RepeatWrapping;
     albedo.wrapT = THREE.RepeatWrapping;
     albedo.repeat.set(tiling, tiling);
     albedo.encoding = THREE.sRGBEncoding;
 
-    const normalMap = mapLoader.load('resources/1.bmp');
+    const normalMap = mapLoader.load('resources/wall.jpeg');
     normalMap.anisotropy = maxAnisotropy;
     normalMap.wrapS = THREE.RepeatWrapping;
     normalMap.wrapT = THREE.RepeatWrapping;
     normalMap.repeat.set(tiling, tiling);
 
-    const roughnessMap = mapLoader.load('resources/1.bmp');
+    const roughnessMap = mapLoader.load('resources/wall.jpeg');
     roughnessMap.anisotropy = maxAnisotropy;
     roughnessMap.wrapS = THREE.RepeatWrapping;
     roughnessMap.wrapT = THREE.RepeatWrapping;
