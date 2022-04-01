@@ -372,9 +372,9 @@ class FirstPersonCameraDemo {
 
   initializeLights_() {
     const distance = 500.0;
-    const angle = Math.PI / 9.0;
+    const angle = Math.PI / 4.0;
     const penumbra = 0.5;
-    const decay = 0.7;
+    const decay = 1.5;
 
     let light = new THREE.SpotLight(
         0xFFFFFF, 100.0, distance, angle, penumbra, decay);
@@ -402,26 +402,26 @@ class FirstPersonCameraDemo {
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
 
-    const metalMap = mapLoader.load('resources/wall2.jpeg');
+    const metalMap = mapLoader.load('resources/wall-2.jpeg');
     metalMap.anisotropy = maxAnisotropy;
     metalMap.wrapS = THREE.RepeatWrapping;
     metalMap.wrapT = THREE.RepeatWrapping;
     metalMap.repeat.set(tiling, tiling);
 
-    const albedo = mapLoader.load('resources/wall2.jpeg');
+    const albedo = mapLoader.load('resources/wall-2.jpeg');
     albedo.anisotropy = maxAnisotropy;
     albedo.wrapS = THREE.RepeatWrapping;
     albedo.wrapT = THREE.RepeatWrapping;
     albedo.repeat.set(tiling, tiling);
     albedo.encoding = THREE.sRGBEncoding;
 
-    const normalMap = mapLoader.load('resources/wall2.jpeg');
+    const normalMap = mapLoader.load('resources/wall-2.jpeg');
     normalMap.anisotropy = maxAnisotropy;
     normalMap.wrapS = THREE.RepeatWrapping;
     normalMap.wrapT = THREE.RepeatWrapping;
     normalMap.repeat.set(tiling, tiling);
 
-    const roughnessMap = mapLoader.load('resources/wall2.jpeg');
+    const roughnessMap = mapLoader.load('resources/wall-2.jpeg');
     roughnessMap.anisotropy = maxAnisotropy;
     roughnessMap.wrapS = THREE.RepeatWrapping;
     roughnessMap.wrapT = THREE.RepeatWrapping;
