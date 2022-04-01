@@ -161,7 +161,7 @@ class FirstPersonCamera {
   updateHeadBob_(timeElapsedS) {
     if (this.headBobActive_) {
       const wavelength = Math.PI;
-      const nextStep = 1 + Math.floor(((this.headBobTimer_ + 0.000001) * 10) / wavelength);
+      const nextStep = 1 + Math.floor(((this.headBobTimer_ + 0.000001)) / wavelength);
       const nextStepTime = nextStep * wavelength / 10;
       this.headBobTimer_ = Math.min(this.headBobTimer_ + timeElapsedS, nextStepTime);
 
@@ -359,7 +359,7 @@ class FirstPersonCameraDemo {
     }
 
     // Crosshair
-    const crosshair = mapLoader.load('resources/crosshair.png');
+    const crosshair = mapLoader.load('resources/1.bmp');
     crosshair.anisotropy = maxAnisotropy;
 
     this.sprite_ = new THREE.Sprite(
@@ -402,26 +402,26 @@ class FirstPersonCameraDemo {
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
 
-    const metalMap = mapLoader.load('resources/freepbr/' + name + 'metallic.png');
+    const metalMap = mapLoader.load('resources/1.bmp');
     metalMap.anisotropy = maxAnisotropy;
     metalMap.wrapS = THREE.RepeatWrapping;
     metalMap.wrapT = THREE.RepeatWrapping;
     metalMap.repeat.set(tiling, tiling);
 
-    const albedo = mapLoader.load('resources/freepbr/' + name + 'albedo.png');
+    const albedo = mapLoader.load('resources/1.bmp');
     albedo.anisotropy = maxAnisotropy;
     albedo.wrapS = THREE.RepeatWrapping;
     albedo.wrapT = THREE.RepeatWrapping;
     albedo.repeat.set(tiling, tiling);
     albedo.encoding = THREE.sRGBEncoding;
 
-    const normalMap = mapLoader.load('resources/freepbr/' + name + 'normal.png');
+    const normalMap = mapLoader.load('resources/1.bmp');
     normalMap.anisotropy = maxAnisotropy;
     normalMap.wrapS = THREE.RepeatWrapping;
     normalMap.wrapT = THREE.RepeatWrapping;
     normalMap.repeat.set(tiling, tiling);
 
-    const roughnessMap = mapLoader.load('resources/freepbr/' + name + 'roughness.png');
+    const roughnessMap = mapLoader.load('resources/1.bmp');
     roughnessMap.anisotropy = maxAnisotropy;
     roughnessMap.wrapS = THREE.RepeatWrapping;
     roughnessMap.wrapT = THREE.RepeatWrapping;
