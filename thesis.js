@@ -341,7 +341,7 @@ class FirstPersonCameraDemo {
     const wall1 = new THREE.Mesh(
       new THREE.BoxGeometry(150, 100, 5),
       concreteMaterial);
-    wall1.position.set(-20, -40, -90);
+    wall1.position.set(-50, -40, -90);
     wall1.castShadow = true;
     wall1.receiveShadow = true;
     this.scene_.add(wall1);
@@ -349,7 +349,7 @@ class FirstPersonCameraDemo {
     const wall2 = new THREE.Mesh(
       new THREE.BoxGeometry(150, 100, 5),
       concreteMaterial);
-    wall2.position.set(-20, -40, 10);
+    wall2.position.set(-50, -40, 10);
     wall2.castShadow = true;
     wall2.receiveShadow = true;
     this.scene_.add(wall2);
@@ -357,7 +357,7 @@ class FirstPersonCameraDemo {
     const wall3 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 100, 150),
       concreteMaterial);
-    wall3.position.set(10, -40, 0);
+    wall3.position.set(-30, -40, 0);
     wall3.castShadow = true;
     wall3.receiveShadow = true;
     this.scene_.add(wall3);
@@ -365,7 +365,7 @@ class FirstPersonCameraDemo {
     const wall4 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 100, 150),
       concreteMaterial);
-    wall4.position.set(-90, -40, 0);
+    wall4.position.set(-130, -40, 0);
     wall4.castShadow = true;
     wall4.receiveShadow = true;
     this.scene_.add(wall4);
@@ -399,7 +399,7 @@ class FirstPersonCameraDemo {
     const distance = 5000.0;
     const angle = Math.PI;
     const penumbra = 0;
-    const decay = 1.0;
+    const decay = 0.9;
 
     let light = new THREE.SpotLight(
         0xFFFFFF, 100.0, distance, angle, penumbra, decay);
@@ -410,7 +410,7 @@ class FirstPersonCameraDemo {
     light.shadow.camera.near = 1;
     light.shadow.camera.far = 100;
 
-    light.position.set(25, 25, 25);
+    light.position.set(50, 50, 50);
     light.lookAt(0, 0, 0);
     this.scene_.add(light);
 
