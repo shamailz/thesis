@@ -397,7 +397,7 @@ class FirstPersonCameraDemo {
 
   initializeLights_() {
     const distance = 9000.0;
-    const angle = Math.PI * 4;
+    const angle = Math.PI * 2;
     const penumbra = 0;
     const decay = 0.8;
 
@@ -407,10 +407,10 @@ class FirstPersonCameraDemo {
     light.shadow.bias = -0.00001;
     light.shadow.mapSize.width = 4096;
     light.shadow.mapSize.height = 4096;
-    light.shadow.camera.near = .3;
-    light.shadow.camera.far = 8;
+    light.shadow.camera.near = 1;
+    light.shadow.camera.far = 10;
 
-    light.position.set(0, 0, 0);
+    light.position.set(25, 25, 0);
     light.lookAt(0, 0, 0);
     this.scene_.add(light);
 
