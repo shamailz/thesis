@@ -306,7 +306,7 @@ class FirstPersonCameraDemo {
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(2, 4, 50),
       this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(10, 2, 0);
+    box.position.set(2, 40, 0);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box);
@@ -314,7 +314,7 @@ class FirstPersonCameraDemo {
     const box2 = new THREE.Mesh(
       new THREE.BoxGeometry(2, 4, 50),
       this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(40, 20, 0);
+    box.position.set(4, 20, 0);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box);
