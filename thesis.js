@@ -280,7 +280,7 @@ class FirstPersonCameraDemo {
       './resources/3.bmp',
       './resources/4.bmp',
       './resources/5.bmp',
-      './resources/6.bmp',
+      './resources/1.bmp',
   ]);
 
     texture.encoding = THREE.sRGBEncoding;
@@ -304,17 +304,26 @@ class FirstPersonCameraDemo {
     this.scene_.add(plane);
 
     const box = new THREE.Mesh(
-      new THREE.BoxGeometry(8, 4, 14),
+      new THREE.BoxGeometry(8, 4, 50),
       this.loadMaterial_('vintage-tile1_', 0.2));
     box.position.set(10, 2, 0);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box);
+    
+    const box2 = new THREE.Mesh(
+      new THREE.BoxGeometry(8, 4, 50),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(40, 20, 0);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box);
+
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
 
     const wall1 = new THREE.Mesh(
-      new THREE.BoxGeometry(100, 100, 4),
+      new THREE.BoxGeometry(100, 100, 40),
       concreteMaterial);
     wall1.position.set(0, -40, -50);
     wall1.castShadow = true;
@@ -322,7 +331,7 @@ class FirstPersonCameraDemo {
     this.scene_.add(wall1);
 
     const wall2 = new THREE.Mesh(
-      new THREE.BoxGeometry(100, 100, 4),
+      new THREE.BoxGeometry(100, 100, 40),
       concreteMaterial);
     wall2.position.set(0, -40, 50);
     wall2.castShadow = true;
@@ -330,7 +339,7 @@ class FirstPersonCameraDemo {
     this.scene_.add(wall2);
 
     const wall3 = new THREE.Mesh(
-      new THREE.BoxGeometry(4, 100, 100),
+      new THREE.BoxGeometry(40, 100, 100),
       concreteMaterial);
     wall3.position.set(50, -40, 0);
     wall3.castShadow = true;
@@ -338,7 +347,7 @@ class FirstPersonCameraDemo {
     this.scene_.add(wall3);
 
     const wall4 = new THREE.Mesh(
-      new THREE.BoxGeometry(4, 100, 100),
+      new THREE.BoxGeometry(40, 100, 100),
       concreteMaterial);
     wall4.position.set(-50, -40, 0);
     wall4.castShadow = true;
