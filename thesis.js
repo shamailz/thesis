@@ -289,6 +289,7 @@ class FirstPersonCameraDemo {
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
     const checkerboard = mapLoader.load('resources/wood.jpeg');
+    const art1 = mapLoader.load('resources/6.jpeg');
     checkerboard.anisotropy = maxAnisotropy;
     checkerboard.wrapS = THREE.RepeatWrapping;
     checkerboard.wrapT = THREE.RepeatWrapping;
@@ -302,6 +303,14 @@ class FirstPersonCameraDemo {
     plane.receiveShadow = true;
     plane.rotation.x = -Math.PI / 2;
     this.scene_.add(plane);
+    
+    const plane1 = new THREE.Mesh(
+      new THREE.PlaneGeometry (50 , 50 , 3, 3),
+      new THREE.MeshStandardMaterial({map: art1}));
+      plane.castShadow = false;
+      plane.receiveShadow = true;
+      plane.rotation.x = -Math.PI ;
+      this.scene_.add(plane1);
 
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
@@ -322,7 +331,7 @@ class FirstPersonCameraDemo {
       const box3 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 40),
       this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(30, 0, 20);
+    box.position.set(40, 0, 20);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box3);
@@ -411,7 +420,7 @@ class FirstPersonCameraDemo {
     light.shadow.camera.far = 10;
 
     light.position.set(50, 50, 0);
-    light.lookAt(0, 0, 0);
+    light.lookAt(10, 10, 0);
     this.scene_.add(light);
 
     const upColour = 0xFFFFFF;
