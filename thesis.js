@@ -410,7 +410,7 @@ class FirstPersonCameraDemo {
     light.shadow.camera.near = 1;
     light.shadow.camera.far = 100;
 
-    light.position.set(25, 25, 0);
+    light.position.set(25, 25, 25);
     light.lookAt(0, 0, 0);
     this.scene_.add(light);
 
