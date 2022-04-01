@@ -288,7 +288,7 @@ class FirstPersonCameraDemo {
 
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
-    const checkerboard = mapLoader.load('resources/checkerboard.png');
+    const checkerboard = mapLoader.load('resources/wood.jpeg');
     checkerboard.anisotropy = maxAnisotropy;
     checkerboard.wrapS = THREE.RepeatWrapping;
     checkerboard.wrapT = THREE.RepeatWrapping;
