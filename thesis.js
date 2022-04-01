@@ -312,28 +312,28 @@ class FirstPersonCameraDemo {
     this.scene_.add(box);
     
     const box2 = new THREE.Mesh(
-      new THREE.BoxGeometry(25, 4, 70),
+      new THREE.BoxGeometry(2, 4, 70),
       this.loadMaterial_('vintage-tile1_', 0.2));
     box.position.set(4, 2, 0);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box2);
     
-      const box3 = new THREE.Mesh(
-      new THREE.BoxGeometry(35, 4, 40),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(7, 2, 0);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box3);
+//       const box3 = new THREE.Mesh(
+//       new THREE.BoxGeometry(2, 4, 40),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(7, 2, 0);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box3);
 
-      const box4 = new THREE.Mesh(
-      new THREE.BoxGeometry(70, 4, 5),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(9, 2, 0);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box4);
+//       const box4 = new THREE.Mesh(
+//       new THREE.BoxGeometry(70, 4, 5),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(16, 2, 0);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box4);
 
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
