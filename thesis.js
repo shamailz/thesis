@@ -396,13 +396,13 @@ class FirstPersonCameraDemo {
   }
 
   initializeLights_() {
-    const distance = 25000.0;
+    const distance = 10000.0;
     const angle = Math.PI;
     const penumbra = 0;
     const decay = 0.9;
 
     let light = new THREE.SpotLight(
-        0xFFFFFF, 750.0, distance, angle, penumbra, decay);
+        0xFFFFFF, 500.0, distance, angle, penumbra, decay);
     light.castShadow = false;
     light.shadow.bias = -0.00001;
     light.shadow.mapSize.width = 4096;
