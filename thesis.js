@@ -319,13 +319,13 @@ class FirstPersonCameraDemo {
     box.receiveShadow = true;
     this.scene_.add(box2);
     
-//       const box3 = new THREE.Mesh(
-//       new THREE.BoxGeometry(2, 4, 40),
-//       this.loadMaterial_('vintage-tile1_', 0.2));
-//     box.position.set(7, 2, 0);
-//     box.castShadow = true;
-//     box.receiveShadow = true;
-//     this.scene_.add(box3);
+      const box3 = new THREE.Mesh(
+      new THREE.BoxGeometry(5, 20, 40),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(30, 0, 20);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box3);
 
 //       const box4 = new THREE.Mesh(
 //       new THREE.BoxGeometry(70, 4, 5),
@@ -396,7 +396,7 @@ class FirstPersonCameraDemo {
   }
 
   initializeLights_() {
-    const distance = 500.0;
+    const distance = 5000.0;
     const angle = Math.PI / 2;
     const penumbra = 0;
     const decay = 1.0;
@@ -414,7 +414,7 @@ class FirstPersonCameraDemo {
     light.lookAt(0, 0, 0);
     this.scene_.add(light);
 
-    const upColour = 0xFFFF80;
+    const upColour = 0xFFFFFF;
     const downColour = 0x808080;
     light = new THREE.HemisphereLight(upColour, downColour, 0.5);
     light.color.setHSL( 0.6, 1, 0.6 );
