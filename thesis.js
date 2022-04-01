@@ -304,7 +304,7 @@ class FirstPersonCameraDemo {
     this.scene_.add(plane);
 
     const box = new THREE.Mesh(
-      new THREE.BoxGeometry(5, 50, 100),
+      new THREE.BoxGeometry(5, 70, 50),
       this.loadMaterial_('vintage-tile1_', 0.2));
     box.position.set(25, 10, 0);
     box.castShadow = true;
@@ -402,7 +402,7 @@ class FirstPersonCameraDemo {
     const decay = 1.0;
 
     let light = new THREE.SpotLight(
-        0xFFFFFF, 50.0, distance, angle, penumbra, decay);
+        0xFFFFFF, 500.0, distance, angle, penumbra, decay);
     light.castShadow = true;
     light.shadow.bias = -0.00001;
     light.shadow.mapSize.width = 4096;
