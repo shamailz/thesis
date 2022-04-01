@@ -339,33 +339,33 @@ class FirstPersonCameraDemo {
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
 
     const wall1 = new THREE.Mesh(
-      new THREE.BoxGeometry(100, 100, 60),
+      new THREE.BoxGeometry(100, 100, 50),
       concreteMaterial);
-    wall1.position.set(0, -40, -50);
+    wall1.position.set(0, -70, -50);
     wall1.castShadow = true;
     wall1.receiveShadow = true;
     this.scene_.add(wall1);
 
     const wall2 = new THREE.Mesh(
-      new THREE.BoxGeometry(100, 100, 60),
+      new THREE.BoxGeometry(100, 100, 50),
       concreteMaterial);
-    wall2.position.set(0, -40, 50);
+    wall2.position.set(0, -70, 50);
     wall2.castShadow = true;
     wall2.receiveShadow = true;
     this.scene_.add(wall2);
 
     const wall3 = new THREE.Mesh(
-      new THREE.BoxGeometry(60, 100, 100),
+      new THREE.BoxGeometry(50, 100, 100),
       concreteMaterial);
-    wall3.position.set(50, -40, 0);
+    wall3.position.set(50, -70, 0);
     wall3.castShadow = true;
     wall3.receiveShadow = true;
     this.scene_.add(wall3);
 
     const wall4 = new THREE.Mesh(
-      new THREE.BoxGeometry(60, 100, 100),
+      new THREE.BoxGeometry(50, 100, 100),
       concreteMaterial);
-    wall4.position.set(-50, -40, 0);
+    wall4.position.set(-50, -70, 0);
     wall4.castShadow = true;
     wall4.receiveShadow = true;
     this.scene_.add(wall4);
