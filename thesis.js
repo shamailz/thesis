@@ -396,7 +396,7 @@ class FirstPersonCameraDemo {
   }
 
   initializeLights_() {
-    const distance = 7000.0;
+    const distance = 5000.0;
     const angle = Math.PI / 2;
     const penumbra = 0;
     const decay = 1.0;
