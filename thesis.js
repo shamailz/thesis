@@ -304,13 +304,13 @@ class FirstPersonCameraDemo {
     plane.rotation.x = -Math.PI / 2;
     this.scene_.add(plane);
     
-    const plane1 = new THREE.Mesh(
-      new THREE.PlaneGeometry (50 , 50 , 3, 3),
-      new THREE.MeshStandardMaterial({map: art1}));
-      plane.castShadow = false;
-      plane.receiveShadow = true;
-      plane.rotation.x = -Math.PI ;
-      this.scene_.add(plane1);
+//     const plane1 = new THREE.Mesh(
+//       new THREE.PlaneGeometry (50 , 50 , 3, 3),
+//       new THREE.MeshStandardMaterial({map: art1}));
+//       plane.castShadow = false;
+//       plane.receiveShadow = true;
+//       plane.rotation.x = -Math.PI ;
+//       this.scene_.add(plane1);
 
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
