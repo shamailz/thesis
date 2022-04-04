@@ -305,8 +305,8 @@ class FirstPersonCameraDemo {
     this.scene_.add(plane);
     
     const plane1 = new THREE.Mesh(
-      new THREE.PlaneGeometry (100 , 100 , 20, 20),
-      new THREE.MeshStandardMaterial({map: art1}));
+      new THREE.PlaneGeometry (100 , 100 , 10, 10),
+      new THREE.MeshStandardMaterial({map: checkerboard}));
       plane.castShadow = false;
       plane.receiveShadow = true;
       plane.rotation.x = -Math.PI / 2;
