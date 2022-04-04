@@ -304,13 +304,13 @@ class FirstPersonCameraDemo {
     plane.rotation.x = -Math.PI / 2;
     this.scene_.add(plane);
     
-//     const plane1 = new THREE.Mesh(
-//       new THREE.PlaneGeometry (50 , 50 , 3, 3),
-//       new THREE.MeshStandardMaterial({map: art1}));
-//       plane.castShadow = false;
-//       plane.receiveShadow = true;
-//       plane.rotation.x = -Math.PI ;
-//       this.scene_.add(plane1);
+    const plane1 = new THREE.Mesh(
+      new THREE.PlaneGeometry (200 , 200 , 20, 20),
+      new THREE.MeshStandardMaterial({map: art1}));
+      plane.castShadow = false;
+      plane.receiveShadow = true;
+      plane.rotation.x = -Math.PI ;
+      this.scene_.add(plane1);
 
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
@@ -382,7 +382,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane, box, wall1, wall2, wall3, wall4 , box , box2 ];
+      plane, plane1 , box, wall1, wall2, wall3, wall4 , box , box2 ];
 
     this.objects_ = [];
 
