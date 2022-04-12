@@ -364,18 +364,18 @@ class FirstPersonCameraDemo {
     const box7 = new THREE.Mesh(
       new THREE.BoxGeometry(10, 20, 5),
       this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(70, 0, -80);
+    box.position.set(70, 0, 60);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box7);
     
-//     const box8 = new THREE.Mesh(
-//       new THREE.BoxGeometry(5, 20, 80),
-//       this.loadMaterial_('vintage-tile1_', 0.2));
-//     box.position.set(60, 0, 0);
-//     box.castShadow = true;
-//     box.receiveShadow = true;
-//     this.scene_.add(box8);
+    const box8 = new THREE.Mesh(
+      new THREE.BoxGeometry(5, 20, 80),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(60, 0, 0);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box8);
 
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
