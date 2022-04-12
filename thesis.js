@@ -276,11 +276,11 @@ class FirstPersonCameraDemo {
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
       './resources/white.png',
-//       './resources/2.bmp',
-//       './resources/3.bmp',
-//       './resources/4.bmp',
-//       './resources/5.bmp',
-//       './resources/1.bmp',
+      './resources/white.png',
+      './resources/white.png',
+      './resources/white.png',
+      './resources/white.png',
+      './resources/white.png',
   ]);
 
     texture.encoding = THREE.sRGBEncoding;
