@@ -297,7 +297,7 @@ class FirstPersonCameraDemo {
     wood.encoding = THREE.sRGBEncoding;
 
     const plane = new THREE.Mesh(
-        new THREE.PlaneGeometry(200, 200, 10, 10),
+        new THREE.PlaneGeometry(300, 300, 10, 10),
         new THREE.MeshStandardMaterial({map: wood}));
     plane.castShadow = false;
     plane.receiveShadow = true;
@@ -340,7 +340,7 @@ class FirstPersonCameraDemo {
       const box4 = new THREE.Mesh(
       new THREE.BoxGeometry( 5, 5, 5),
       this.loadMaterial_(art1 , 0.2));
-    box.position.set(-60, 0, 20);
+    box.position.set(-60, 10, 20);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box4);
