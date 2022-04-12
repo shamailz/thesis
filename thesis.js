@@ -337,13 +337,13 @@ class FirstPersonCameraDemo {
     box.receiveShadow = true;
     this.scene_.add(box3);
 
-//       const box4 = new THREE.Mesh(
-//       new THREE.BoxGeometry( 5, 5, 5),
-//       this.loadMaterial_(art1 , 0.2));
-//     box.position.set(-60, 10, 20);
-//     box.castShadow = true;
-//     box.receiveShadow = true;
-//     this.scene_.add(box4);
+      const box4 = new THREE.Mesh(
+      new THREE.BoxGeometry( 400, 5, 400),
+      this.loadMaterial_(art1 , 0.2));
+    box.position.set(80, 0, 0);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box4);
     
      const box5 = new THREE.Mesh(
       new THREE.BoxGeometry(120, 20, 5),
@@ -356,7 +356,7 @@ class FirstPersonCameraDemo {
     const box6 = new THREE.Mesh(
       new THREE.BoxGeometry(120, 20, 5),
       this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(30, 0, 70);
+    box.position.set(30, 0, -80);
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box6);
