@@ -134,7 +134,7 @@ class FirstPersonCamera {
   updateCamera_(_) {
     this.camera_.quaternion.copy(this.rotation_);
     this.camera_.position.copy(this.translation_);
-    this.camera_.position.y += Math.sin(this.headBobTimer_ * 10) * 1.5;
+    this.camera_.position.y += Math.sin(this.headBobTimer_ * 20) * 1.5;
 
     const forward = new THREE.Vector3(0, 0, -1);
     forward.applyQuaternion(this.rotation_);
@@ -383,7 +383,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane , box, wall1, wall2, wall3, wall4 , box , box2 ];
+      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box4 ];
 
     this.objects_ = [];
 
