@@ -307,6 +307,7 @@ class FirstPersonCameraDemo {
     const plane1 = new THREE.Mesh(
       new THREE.PlaneGeometry (20 , 20 , 50, 50),
       new THREE.MeshStandardMaterial({map: art1}));
+      plane.position.set(30, 7, 40)
       plane.castShadow = false;
       plane.receiveShadow = true;
       plane.rotation.x = -Math.PI / 2;
