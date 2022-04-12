@@ -423,7 +423,31 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box5 ];
+      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box5 , box6 ,box7,  box8 , box9 ];
+    
+    const loader = new THREE.ImageLoader();
+
+// load a image resource
+loader.load(
+	// resource URL
+	'resources/wood.jpeg',
+
+	// onLoad callback
+	function ( image ) {
+		// use the image, e.g. draw part of it on a canvas
+		const canvas = document.createElement( 'canvas' );
+		const context = canvas.getContext( '2d' );
+		context.drawImage( image, 100, 100 );
+	},
+
+	// onProgress callback currently not supported
+	undefined,
+
+	// onError callback
+	function () {
+		console.error( 'An error happened.' );
+	}
+);
 
     this.objects_ = [];
 
