@@ -304,13 +304,13 @@ class FirstPersonCameraDemo {
     plane.rotation.x = -Math.PI / 2;
     this.scene_.add(plane);
     
-    const plane1 = new THREE.Mesh(
-      new THREE.PlaneGeometry (100 , 100 , 50, 50),
-      new THREE.MeshStandardMaterial({map: wood}));
-      plane.castShadow = false;
-      plane.receiveShadow = true;
-      plane.rotation.x = -Math.PI / 2;
-      this.scene_.add(plane1);
+//     const plane1 = new THREE.Mesh(
+//       new THREE.PlaneGeometry (100 , 100 , 50, 50),
+//       new THREE.MeshStandardMaterial({map: wood}));
+//       plane.castShadow = false;
+//       plane.receiveShadow = true;
+//       plane.rotation.x = -Math.PI / 2;
+//       this.scene_.add(plane1);
 
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
@@ -336,13 +336,13 @@ class FirstPersonCameraDemo {
     box.receiveShadow = true;
     this.scene_.add(box3);
 
-//       const box4 = new THREE.Mesh(
-//       new THREE.BoxGeometry(70, 4, 5),
-//       this.loadMaterial_('vintage-tile1_', 0.2));
-//     box.position.set(16, 2, 0);
-//     box.castShadow = true;
-//     box.receiveShadow = true;
-//     this.scene_.add(box4);
+      const box4 = new THREE.Mesh(
+      new THREE.BoxGeometry(400, 4, 5),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(16, 0, 0);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box4);
 
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
