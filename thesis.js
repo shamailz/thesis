@@ -275,7 +275,7 @@ class FirstPersonCameraDemo {
   initializeScene_() {
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-      './resources/white.jpeg',
+      './resources/white.png',
 //       './resources/2.bmp',
 //       './resources/3.bmp',
 //       './resources/4.bmp',
