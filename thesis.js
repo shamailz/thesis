@@ -383,7 +383,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane, plane1 , box, wall1, wall2, wall3, wall4 , box , box2 ];
+      plane , box, wall1, wall2, wall3, wall4 , box , box2 ];
 
     this.objects_ = [];
 
