@@ -344,6 +344,14 @@ class FirstPersonCameraDemo {
 //     box.castShadow = true;
 //     box.receiveShadow = true;
 //     this.scene_.add(box4);
+    
+     const box5 = new THREE.Mesh(
+      new THREE.BoxGeometry(120, 20, 5),
+      this.loadMaterial_('vintage-tile1_', 0.2));
+    box.position.set(-25, 0, 10);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box5);
 
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
@@ -383,7 +391,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box4 ];
+      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box5 ];
 
     this.objects_ = [];
 
