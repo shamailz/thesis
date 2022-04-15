@@ -313,6 +313,9 @@ class FirstPersonCameraDemo {
 //       plane.rotation.x = -Math.PI ;
 //       this.scene_.add(plane1);
 
+    const loaderCube = new THREE.CubeTextureLoader();
+    
+    
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
       this.loadMaterial_('vintage-tile1_', 0.2));
@@ -341,6 +344,7 @@ class FirstPersonCameraDemo {
       new THREE.BoxGeometry(5, 10, 7),
       this.loadMaterial_('vintage-tile1_', 0.2));
 //       mapLoader.load('resources/art.png');
+    loaderCube.load('resources/art.png');
     box.position.set(3, 0, 25);
     box.castShadow = true;
     box.receiveShadow = true;
