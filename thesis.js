@@ -315,6 +315,9 @@ class FirstPersonCameraDemo {
 
 //     const loaderCube = new THREE.CubeTextureLoader();
     
+    var img = new THREE.MeshBasicMaterial({ //CHANGED to MeshBasicMaterial
+        map:THREE.ImageUtils.loadTexture('resources/art1.png')
+    
     
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
