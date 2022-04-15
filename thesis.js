@@ -313,7 +313,7 @@ class FirstPersonCameraDemo {
 //       plane.rotation.x = -Math.PI ;
 //       this.scene_.add(plane1);
 
-    const loaderCube = new THREE.CubeTextureLoader();
+//     const loaderCube = new THREE.CubeTextureLoader();
     
     
     const box = new THREE.Mesh(
