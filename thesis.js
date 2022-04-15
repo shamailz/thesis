@@ -336,6 +336,14 @@ class FirstPersonCameraDemo {
     box.castShadow = true;
     box.receiveShadow = true;
     this.scene_.add(box3);
+    
+    const art1 = new THREE.Mesh(
+      new THREE.BoxGeometry(5, 10, 7),
+      this.loadMaterial_('art1.png', 0.2));
+    box.position.set(3, 0, 25);
+    box.castShadow = true;
+    box.receiveShadow = true;
+    this.scene_.add(box3);
 
 //       const box4 = new THREE.Mesh(
 //       new THREE.BoxGeometry( 400, 5, 400),
