@@ -315,10 +315,6 @@ class FirstPersonCameraDemo {
 
 //     const loaderCube = new THREE.CubeTextureLoader();
     
-    var img = new THREE.MeshBasicMaterial({ //CHANGED to MeshBasicMaterial
-        map:THREE.ImageUtils.loadTexture('resources/art1.png')  });
-    img.map.needsUpdate = true
-    
     
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 150),
@@ -338,7 +334,7 @@ class FirstPersonCameraDemo {
     
       const box3 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 20, 120),
-      this.loadMaterial_('vintage-tile1_', 0.2));
+      this.loadMaterial_('resources/art1.png', 0.2));
     box.position.set(-40, 0, 25);
     box.castShadow = true;
     box.receiveShadow = true;
