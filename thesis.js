@@ -340,7 +340,7 @@ class FirstPersonCameraDemo {
     box.receiveShadow = true;
     this.scene_.add(box3);
     
-    const art1 = new THREE.Mesh(
+    const box12 = new THREE.Mesh(
       new THREE.BoxGeometry(5, 10, 7),
       this.loadMaterial_('vintage-tile1_', 0.2));
 //       mapLoader.load('resources/art.png');
