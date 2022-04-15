@@ -345,45 +345,45 @@ class FirstPersonCameraDemo {
 //     box.receiveShadow = true;
 //     this.scene_.add(box4);
     
-     const box5 = new THREE.Mesh(
-      new THREE.BoxGeometry(80, 20, 5),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(30, 0, 90);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box5);
+//      const box5 = new THREE.Mesh(
+//       new THREE.BoxGeometry(80, 20, 5),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(30, 0, 90);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box5);
     
-    const box6 = new THREE.Mesh(
-      new THREE.BoxGeometry(90, 20, 5),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(20, 0, 50);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box6);
+//     const box6 = new THREE.Mesh(
+//       new THREE.BoxGeometry(90, 20, 5),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(20, 0, 50);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box6);
     
-    const box7 = new THREE.Mesh(
-      new THREE.BoxGeometry(60, 20, 5),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(70, 0, 80);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box7);
+//     const box7 = new THREE.Mesh(
+//       new THREE.BoxGeometry(60, 20, 5),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(70, 0, 80);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box7);
     
-    const box8 = new THREE.Mesh(
-      new THREE.BoxGeometry(5, 20, 70),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(80, 0, 40);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box8);
+//     const box8 = new THREE.Mesh(
+//       new THREE.BoxGeometry(5, 20, 70),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(80, 0, 40);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box8);
     
-    const box9 = new THREE.Mesh(
-      new THREE.BoxGeometry(5, 20, 150),
-      this.loadMaterial_('vintage-tile1_', 0.2));
-    box.position.set(25, 0, -60);
-    box.castShadow = true;
-    box.receiveShadow = true;
-    this.scene_.add(box9);
+//     const box9 = new THREE.Mesh(
+//       new THREE.BoxGeometry(5, 20, 150),
+//       this.loadMaterial_('vintage-tile1_', 0.2));
+//     box.position.set(25, 0, -60);
+//     box.castShadow = true;
+//     box.receiveShadow = true;
+//     this.scene_.add(box9);
 
 
     const concreteMaterial = this.loadMaterial_('concrete3-', 4);
@@ -423,7 +423,9 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane , box, wall1, wall2, wall3, wall4 , box , box2, box3, box5 , box6 ,box7,  box8 , box9 ];
+      plane , box, wall1, wall2, wall3, wall4 
+//       box , box2, box3, box5 , box6 ,box7,  box8 , box9 
+    ];
     
 //     const loader = new THREE.ImageLoader();
 
