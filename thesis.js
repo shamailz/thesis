@@ -436,9 +436,7 @@ class FirstPersonCameraDemo {
     // Create Box3 for each mesh in the scene so that we can
     // do some easy intersection tests.
     const meshes = [
-      plane , box, wall1, wall2, wall3, wall4 
-//       box , box2, box3, box5 , box6 ,box7,  box8 , box9 
-    ];
+      plane , box, wall1, wall2, wall3, wall4 ];
     
 //     const loader = new THREE.ImageLoader();
 
